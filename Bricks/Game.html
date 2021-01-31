@@ -1,0 +1,51 @@
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Bricks</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="shortcut icon" type="image/png" href="Slike/ball.png"/>
+</head>
+<body onload="drawIt()">
+	<h1>The Bricks</h1>
+	<div id="superwrap">
+	<div id="wrap">
+		<div id="slika">
+			<img id="ball" src="Slike/ball.png">
+			<img id="paddle" src="Slike/paddle.png">
+			<img id="brick1" src="Slike/brick.png">
+			<img id="brick2" src="Slike/brick1.png">
+			<img id="brick3" src="Slike/brick2.png">
+		</div>
+		<div id="kanvas">
+			<canvas width="600" height="600" id="canvas"></canvas>
+			<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+			<script src="JavaScript/jQuery.min.js"></script>
+			<script src="JavaScript/jsBricks.js"></script>
+		</div>
+		<div id="kanvas1">
+			<canvas width="500" height="500" id="canvas1"></canvas>
+		</div>
+
+	</div>
+	<div id="wrap1">
+		<div id="inner1">
+		</div>
+		<div id="inner">
+			<div id="innertext">
+			<a>Time:</a><br/><a id="cas">00:00</a>
+			</div>
+		</div>
+		<div id="inner">
+			<div id="innertext">
+			<a>Points:</a><br/><a id="tocke">0</a>
+			</div>
+		</div>
+		<div id="inner">
+		</div>
+	</div>
+
+	</div>
+	<a class="font">Pause: P</a>  <a class="font">Start: SPACE</a>
+</body>
+</html>
